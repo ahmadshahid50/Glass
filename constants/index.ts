@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   locale: "en_PK",
   phone: "+92 326 850 6921",
   whatsapp: "923268506921",
-  email: "info@azanglass.com.pk",
+  email: "meharahmed417@gmail.com",
   address: "Liberty Market, Gulberg III, Lahore, Punjab, Pakistan",
   city: "Lahore",
   country: "Pakistan",

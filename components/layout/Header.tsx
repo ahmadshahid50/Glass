@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NAV_ITEMS, SITE_CONFIG } from "@/constants";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +85,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle isScrolled={isScrolled} />
           <Button
             href="/contact"
             variant="accent"
@@ -119,7 +117,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 top-0 z-40 bg-white dark:bg-primary xl:hidden"
+            className="fixed inset-0 top-0 z-40 bg-white xl:hidden"
           >
             <nav className="flex h-full flex-col px-6 pt-24 pb-8" aria-label="Mobile navigation">
               {NAV_ITEMS.map((item, index) => (
